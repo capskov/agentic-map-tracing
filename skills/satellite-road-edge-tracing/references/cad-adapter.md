@@ -1,0 +1,13 @@
+# CAD能力适配
+
+先读本地底座实际目录与版本；不要假定任何CAD都有同名接口。所需基础能力是影像引用只读事实、原生多段线创建/读回、图层隔离、保存验证、WCS范围定位和真实截图。工具不足时可使用已获允许的宿主操作流程，但须注明验证范围。
+
+现场一种适配为CAD Agent Foundation：`dwg_get_entity_properties`读原生影像origin/u_axis/v_axis/image_width/image_height和reference_read；`dwg_apply_plan`创建polyline；`dwg_view`按WCS window定位并capture。此处名称是适配示例，不是所有环境的依赖。
+
+视图回执应检查document/session、camera、wcs_xy_bounds、capture时间与文件；native_regen_completed只证明重绘完成，display_settle_verified=false时不能声称外部影像瓦片已稳定。保存后继续改视图，不意味着复制出的DWG已带最新打开视图，需要明确是否另存视图。
+
+现场beta.2曾出现带constant_width的polyline提交前验证回滚；beta.3补全原生宽度事实后已在实机验证0.08常宽创建和保存成功。旧会话保留原版本，切换后重新读取摘要；不要把曾经省略线宽的绕行写成永久规则。原生变换仍仅支持零宽2D实体，非零宽scale/rotate/copy保持明确无效果拒绝。
+
+beta.3在预览截图之后增加编辑器重绘及post_capture_regen_completed，实战一次宿主观察已恢复完整窗口显示；display_settle_verified仍为false。PNG完整不证明交互窗口也完整，交互截图与原生PNG应分开判断。截图文件名目前使用ASCII新basename，中文路径可由宿主解析但中文basename会被入口拒绝；明确拒绝不按未知写入重放。
+
+专业代理管线显示几何可能在节点处截短；判定是否穿路可参考显示线，正式长度或设计语义应读专业公开属性，不能把显示截短长度当专业长度。

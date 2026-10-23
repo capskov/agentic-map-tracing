@@ -1,0 +1,23 @@
+{
+  "schema": "agentic-map-tracing-catalog-v1",
+  "project": "agentic-map-tracing",
+  "version": "0.1.0-beta.1",
+  "license": "MIT",
+  "repository": "https://github.com/capskov/agentic-map-tracing",
+  "agent_entry": "AGENTS.md",
+  "skills": [
+    {
+      "name": "satellite-road-edge-tracing",
+      "path": "skills/satellite-road-edge-tracing/SKILL.md",
+      "status": "beta-field-iterated",
+      "purpose": "Agent-led pavement interpretation, editable tracing and overlay correction",
+      "requires": [
+        "visual reasoning agent",
+        "source imagery",
+        "CAD/GIS tools"
+      ],
+      "optional_backend": "https://github.com/capskov/cad-agent-foundation",
+      "helper_role": "coordinates, geometry, evidence; no road recognition"
+    }
+  ]
+}

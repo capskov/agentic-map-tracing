@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="460" viewBox="0 0 1140 460" role="img" aria-labelledby="title desc">
+  <title id="title">Agent road interpretation: position, shared boundaries, and real widening</title>
+  <desc id="desc">Self-made conceptual geometry. Not satellite imagery, a field result, or an accuracy benchmark. A constant-width pair may drift together; a shared road band must be anchored to evidence; real widening requires a separate cross-section change.</desc>
+  <rect width="1140" height="460" rx="20" fill="#101c2b"/>
+  <g font-family="Arial, sans-serif">
+    <text x="34" y="43" fill="#f4f7fb" font-size="24" font-weight="700">Agent interprets. Tools draw. Overlays verify.</text>
+    <text x="34" y="72" fill="#aabacb" font-size="15">Road knowledge + paired boundaries + evidence-based correction</text>
+    <g transform="translate(30 98)">
+      <rect width="345" height="290" rx="12" fill="#223428"/>
+      <path d="M120 275 L120 22 L230 22 L230 275Z" fill="#717b84"/>
+      <path d="M175 28 V270" stroke="#f6f2cf" stroke-width="3" stroke-dasharray="16 12"/>
+      <path d="M82 28 V270 M192 28 V270" stroke="#ffbb68" stroke-width="4"/>
+      <path d="M84 145 H119" stroke="#ffbb68" stroke-width="2"/>
+      <path d="M112 139 L120 145 L112 151" fill="none" stroke="#ffbb68" stroke-width="2"/>
+      <rect x="12" y="10" width="95" height="28" rx="6" fill="#101c2b"/>
+      <text x="23" y="29" fill="#ffbb68" font-size="14">1 / DRIFT</text>
+      <text x="15" y="320" fill="#e4ebf2" font-size="16">Equal width can still be misplaced.</text>
+    </g>
+    <g transform="translate(398 98)">
+      <rect width="345" height="290" rx="12" fill="#223428"/>
+      <path d="M120 275 L120 22 L230 22 L230 275Z" fill="#717b84"/>
+      <path d="M175 28 V270" stroke="#f6f2cf" stroke-width="3" stroke-dasharray="16 12"/>
+      <path d="M120 28 V270 M230 28 V270" stroke="#7ce0be" stroke-width="4"/>
+      <path d="M120 82 H230 M120 150 H230 M120 220 H230" stroke="#7ce0be" stroke-opacity=".6" stroke-width="2"/>
+      <g fill="#7ce0be"><circle cx="120" cy="82" r="5"/><circle cx="230" cy="82" r="5"/><circle cx="120" cy="220" r="5"/><circle cx="230" cy="220" r="5"/></g>
+      <rect x="12" y="10" width="111" height="28" rx="6" fill="#101c2b"/>
+      <text x="23" y="29" fill="#7ce0be" font-size="14">2 / ANCHOR</text>
+      <text x="15" y="320" fill="#e4ebf2" font-size="16">Place both edges using shared evidence.</text>
+    </g>
+    <g transform="translate(766 98)">
+      <rect width="345" height="290" rx="12" fill="#223428"/>
+      <path d="M120 275 L120 215 L90 95 L90 22 L260 22 L260 95 L230 215 L230 275Z" fill="#717b84"/>
+      <path d="M175 28 V270" stroke="#f6f2cf" stroke-width="3" stroke-dasharray="16 12"/>
+      <path d="M120 275 L120 215 L90 95 L90 22 M260 22 L260 95 L230 215 L230 275" fill="none" stroke="#7ce0be" stroke-width="4"/>
+      <path d="M120 240 H230 M107 160 H243 M90 64 H260" stroke="#7ce0be" stroke-opacity=".6" stroke-width="2"/>
+      <rect x="12" y="10" width="110" height="28" rx="6" fill="#101c2b"/>
+      <text x="23" y="29" fill="#7ce0be" font-size="14">3 / EXPLAIN</text>
+      <text x="15" y="320" fill="#e4ebf2" font-size="16">Model a supported taper separately.</text>
+    </g>
+    <text x="34" y="445" fill="#aabacb" font-size="13">Self-made concept illustration / arbitrary geometry / not a field extraction result</text>
+  </g>
+</svg>

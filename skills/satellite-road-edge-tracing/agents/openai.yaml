@@ -1,0 +1,4 @@
+interface:
+  display_name: "Satellite Road Edge Tracing"
+  short_description: "Agent-led road interpretation, CAD tracing and overlay review"
+  default_prompt: "Use $satellite-road-edge-tracing to interpret paired road edges from markings, context and human guidance, trace with CAD/GIS tools, and verify actual overlays."

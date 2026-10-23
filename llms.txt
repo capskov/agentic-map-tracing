@@ -1,0 +1,13 @@
+# Agentic Map Tracing
+> Agent-native skills for reasoning-driven geospatial interpretation and editable CAD/GIS tracing. Agent perception and domain reasoning choose boundaries; helpers execute deterministic geometry and evidence work.
+
+- [Agent entry](AGENTS.md)
+- [Road skill](skills/satellite-road-edge-tracing/SKILL.md)
+- [Install/discover](docs/SKILL-DISCOVERY.md)
+- [Method](docs/interpretation-method.md)
+- [Correction cases](docs/correction-cases.md)
+- [Validation](docs/validation.md)
+- [Contribute under MIT](CONTRIBUTING.md)
+- [Optional AutoCAD backend](https://github.com/capskov/cad-agent-foundation)
+
+Only the road module is implemented. No segmentation weights, backend connector, survey accuracy or cross-model equivalence is implied.
