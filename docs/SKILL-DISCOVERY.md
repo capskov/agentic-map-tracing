@@ -17,3 +17,10 @@ Invoke `$satellite-road-edge-tracing` with original imagery, scope, route, human
 This is a standard SKILL.md package, not official OpenAI approval or guaranteed directory indexing. `skill-catalog.json` is this project's navigation catalog, not an official universal registry. `llms.txt` is a navigation aid. Separate [CAD Agent Foundation](https://github.com/capskov/cad-agent-foundation) is the MCP/CLI backend; its registration is independent. Neither component installs the other or grants drawing access.
 
 Keywords: Agent Skill, geospatial visual reasoning, satellite road-edge tracing, aerial imagery digitization, pavement boundaries, paired road bands, lane markings, cross-sections, occlusion, channelization, human feedback, editable CAD/GIS, overlay review, 卫星图判读、道路边线、人工示教、整体偏移纠错。
+
+
+## Observed discovery check — 2026-10-23
+
+Skills CLI 1.7.4, run with `--list` from an isolated local installation of `skills` and `yaml`, cloned the public repository, found exactly one Skill, and displayed its full agent-led interpretation description. Telemetry was disabled. This validates repository discovery, not every host installation or visual tracing quality. On this host the initial pnpm-dlx run lacked a resolvable YAML dependency; the isolated dependency install resolved it. Direct folder copying remains available without this CLI.
+
+实测可发现`satellite-road-edge-tracing`并读出其完整用途，未安装到全局技能目录；外部目录收录和搜索排名不由本项目保证。
